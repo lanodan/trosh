@@ -3,7 +3,7 @@ asteroid = class:new()
 function asteroid:init(x, y, size)
 	self.x = x or math.random(80)+10
 	self.y = y or -10
-	self.r = math.random(math.pi*20)/10
+	self.r = math.random(math.ceil(math.pi*20))/10
 	self.size = size or 1
 	self.rspeed = (math.random()*2-1)*10
 	self.speedx = math.random(5)+20
