@@ -23,7 +23,7 @@ function love.run()
 	
 	function love.resize(w, h)
 		windowwidth, windowheight = w, h
-		lx, ly = Config.Letterboxing.LogicalWidth, Config.Letterboxing.LogicalHeight
+		--lx, ly = Config.Letterboxing.LogicalWidth, Config.Letterboxing.LogicalHeight
 		LogicalScale.ScreenX, LogicalScale.ScreenY = w, h
 		LogicalScale.ScaleOverall = math.min(LogicalScale.ScreenX / lx, LogicalScale.ScreenY / ly)
 		LogicalScale.OffX = (LogicalScale.ScreenX - LogicalScale.ScaleOverall * lx) / 2
